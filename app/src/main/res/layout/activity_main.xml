@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnPLay"
+            style="@style/icones"
+            android:contentDescription="@string/app_play"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_play_48dp" />
+
+        <ImageButton
+            android:id="@+id/btnBiblio"
+            style="@style/icones"
+            android:contentDescription="@string/app_biblioteca"
+            app:srcCompat="@drawable/ic_library_48dp" />
+
+
+        <ImageButton
+            android:id="@+id/btnFind"
+            style="@style/icones"
+            android:contentDescription="@string/app_find"
+            app:srcCompat="@drawable/ic_search_black_48dp" />
+
+
+        <ImageButton
+            android:id="@+id/btnLoja"
+            style="@style/icones"
+            android:contentDescription="@string/app_store"
+            app:layout_constraintStart_toEndOf="@+id/btnBiblio"
+            app:srcCompat="@drawable/ic_store_black_48dp" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Classicos do Rock"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <ImageView
+            android:id="@+id/imgAlbum"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center"
+            android:layout_margin="24dp"
+            app:srcCompat="@drawable/cd_rock" />
+
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Crossing a line"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_play_48dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Run for cover" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_pause__48dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="The day i die"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_play_48dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

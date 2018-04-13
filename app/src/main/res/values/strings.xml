@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Udacity Play</string>
+    <string name="app_play">Escutando</string>
+    <string name="app_store">Loja</string>
+    <string name="app_find">Buscar</string>
+    <string name="app_biblioteca">Suas musicas</string>
+</resources>
