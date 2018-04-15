@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ramonsl.appmusicu.FindActivity">
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Titulos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="As mais tocadas" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/albuns"
+                        android:src="@drawable/cd_01" />
+
+                    <ImageView
+                        style="@style/albuns"
+                        android:src="@drawable/cd_02" />
+
+                    <ImageView
+                        style="@style/albuns"
+                        android:src="@drawable/cd_03" />
+
+                    <ImageView
+                        style="@style/albuns"
+                        android:src="@drawable/cd_04" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            style="@style/Titulos"
+            android:text="Suas buscas" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/albuns"
+                        android:src="@drawable/cd_rock" />
+
+                    <ImageView
+                        style="@style/albuns"
+                        android:src="@drawable/cd_vera" />
+
+                    <ImageView
+                        style="@style/albuns"
+                        android:src="@drawable/cd_carnaval" />
+
+                    <ImageView
+                        style="@style/albuns"
+                        android:src="@drawable/cd_01" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</LinearLayout>

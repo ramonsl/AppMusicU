@@ -1,5 +1,6 @@
 package com.example.ramonsl.appmusicu;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,8 +17,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton btnPlay = findViewById(R.id.btnPLay);
         ImageButton btnFind = findViewById(R.id.btnFind);
         ImageButton btnStore = findViewById(R.id.btnLoja);
-        ImageButton btnBiblio = findViewById(R.id.btnBiblio);
-
+        ImageButton btnRadio = findViewById(R.id.btnRadio);
 
         btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,29 +26,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        openIntent(R.id.btnRadio,RadioActivity.class);
+        openIntent(R.id.btnFind,FindActivity.class);
+        openIntent(R.id.btnLoja,StoreActivity.class);
 
-        btnFind.setOnClickListener(new View.OnClickListener() {
+    }
+
+
+    private void openIntent(int id, final Class<? extends Activity> clazz){
+
+        ImageButton btn = findViewById(id);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(getApplicationContext(),FindActivity.class);
-                startActivity(it);
-                   }
-        });
-
-        btnStore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent it = new Intent(getApplicationContext(),StoreActivity.class);
-                startActivity(it);
-            }
-        });
-
-
-
-        btnBiblio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent it = new Intent(getApplicationContext(),BibliotecaActivity.class);
+                Intent it = new Intent(getApplicationContext(),clazz);
                 startActivity(it);
             }
         });

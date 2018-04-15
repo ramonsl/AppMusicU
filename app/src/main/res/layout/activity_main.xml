@@ -21,7 +21,7 @@
             app:srcCompat="@drawable/ic_play_48dp" />
 
         <ImageButton
-            android:id="@+id/btnBiblio"
+            android:id="@+id/btnRadio"
             style="@style/icones"
             android:contentDescription="@string/app_biblioteca"
             app:srcCompat="@drawable/ic_library_48dp" />
@@ -38,7 +38,7 @@
             android:id="@+id/btnLoja"
             style="@style/icones"
             android:contentDescription="@string/app_store"
-            app:layout_constraintStart_toEndOf="@+id/btnBiblio"
+            app:layout_constraintStart_toEndOf="@+id/btnRadio"
             app:srcCompat="@drawable/ic_store_black_48dp" />
 
     </android.support.v7.widget.LinearLayoutCompat>
@@ -55,14 +55,13 @@
             android:gravity="center"
             android:padding="16dp"
             android:text="Classicos do Rock"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            android:textAppearance="@style/Titulos" />
 
         <ImageView
-            android:id="@+id/imgAlbum"
-            android:layout_width="128dp"
-            android:layout_height="128dp"
+            android:id="@+id/imageView"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
             android:layout_gravity="center"
-            android:layout_margin="24dp"
             app:srcCompat="@drawable/cd_rock" />
 
         <LinearLayout
@@ -76,20 +75,22 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:text="Crossing a line"
-                android:textSize="18sp" />
+                style="@style/faixas" />
+
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/ic_play_48dp" />
         </LinearLayout>
+
         <LinearLayout
             android:padding="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
-                android:textSize="18sp"
+                style="@style/faixas"
                 android:layout_width="wrap_content"
                 android:layout_weight="2"
                 android:layout_height="wrap_content"
@@ -109,17 +110,20 @@
             android:orientation="horizontal">
 
             <TextView
+                style="@style/faixas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:text="The day i die"
-                android:textSize="18sp" />
+              />
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/ic_play_48dp" />
         </LinearLayout>
+
+
     </LinearLayout>
 
 

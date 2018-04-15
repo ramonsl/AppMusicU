@@ -18,11 +18,16 @@
         <activity android:name=".StoreActivity"  android:label="@string/app_store">
             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"></meta-data>
         </activity>
-        <activity android:name=".BibliotecaActivity"  android:label="@string/app_biblioteca">
+        <activity android:name=".RadioActivity"  android:label="@string/app_biblioteca">
             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"></meta-data>
         </activity>
         <activity android:name=".FindActivity" android:label="@string/app_find">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"></meta-data>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity">
+
+
+            </meta-data>
+
+
         </activity>
     </application>
 

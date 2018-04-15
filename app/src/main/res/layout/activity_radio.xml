@@ -1,14 +1,174 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.ramonsl.appmusicu.FindActivity">
 
-    <TextView
-        android:id="@+id/Txt"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nessa tela teria quer ter um navigation menu, e um searchview para pesquisar as musicas... ahh preciso falar que teria que tem uma api para consultar?" />
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/Titulos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suas Musicas" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:src="@drawable/cd_vera" />
+
+
+                <Button
+                    android:id="@+id/btnPlay"
+                    android:layout_width="128dp"
+                    android:layout_height="48dp"
+                    android:background="@color/primary_light"
+                    android:text="Play"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Titulos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vera Louca - Ao Vivo" />
+
+                <TextView
+                    style="@style/SubTitulos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Faixas" />
+
+                <TextView
+                    style="@style/faixas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A vida é de graça" />
+
+                <TextView
+                    style="@style/faixas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Velocidade" />
+
+                <TextView
+                    style="@style/faixas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Preto e Branco" />
+
+                <TextView
+                    style="@style/faixas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A Bailarina" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:src="@drawable/cd_carnaval" />
+
+
+                <Button
+                    android:id="@+id/btnPlay1"
+                    android:layout_width="128dp"
+                    android:layout_height="48dp"
+                    android:background="@color/primary_light"
+                    android:text="PLay"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Titulos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Carnaval infantil" />
+
+                <TextView
+                    style="@style/SubTitulos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Faixas" />
+
+                <TextView
+                    style="@style/faixas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chiquita bacana" />
+
+                <TextView
+                    style="@style/faixas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A Jardineira" />
+
+                <TextView
+                    style="@style/faixas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hoje é dia ade carnaval" />
+
+                <TextView
+                    style="@style/faixas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aurora" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

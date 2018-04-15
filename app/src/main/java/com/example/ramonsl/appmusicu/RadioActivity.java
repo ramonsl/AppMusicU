@@ -6,25 +6,28 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class StoreActivity extends AppCompatActivity {
+public class RadioActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_store);
-        Button btn1 = findViewById(R.id.btnComprar);
-        Button btn2 = findViewById(R.id.btnComprar1);
+        setContentView(R.layout.activity_radio);
+
+
+
+        Button btn1 = findViewById(R.id.btnPlay);
+        Button btn2 = findViewById(R.id.btnPlay1);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Aqui iria para uma activiti onde seria feito o pagamento",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Aqui iria para activity inicial para tocar as musicas ",Toast.LENGTH_LONG).show();
             }
         });
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Aqui iria para uma activiti onde seria feito o pagamento",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Aqui iria para activity inicial para tocar as musicas",Toast.LENGTH_LONG).show();
             }
         });
     }
