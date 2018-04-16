@@ -12,22 +12,35 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StoreActivity"  android:label="@string/app_store">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"></meta-data>
+        <activity
+            android:name=".StoreActivity"
+            android:label="@string/app_store">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name=".RadioActivity"  android:label="@string/app_biblioteca">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"></meta-data>
+        <activity
+            android:name=".LibraryActivity"
+            android:label="@string/app_biblioteca">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name=".FindActivity" android:label="@string/app_find">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity">
-
-
-            </meta-data>
-
-
+        <activity
+            android:name=".FindActivity"
+            android:label="@string/app_find">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"></meta-data>
+        </activity>
+        <activity android:name=".PayActivity" android:label="Pagamento">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".StoreActivity"></meta-data>
         </activity>
     </application>
 

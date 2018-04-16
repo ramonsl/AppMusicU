@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        openIntent(R.id.btnRadio,RadioActivity.class);
+        openIntent(R.id.btnRadio,LibraryActivity.class);
         openIntent(R.id.btnFind,FindActivity.class);
         openIntent(R.id.btnLoja,StoreActivity.class);
 

@@ -5,4 +5,5 @@
     <string name="app_find">Buscar</string>
     <string name="app_biblioteca">Suas musicas</string>
     <string name="app_album">Capa do album</string>
+    <string name="app_meioPagamento">Meio de pagamento</string>
 </resources>

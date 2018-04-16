@@ -33,6 +33,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/imgAlb1"
                     android:layout_width="128dp"
                     android:layout_height="128dp"
                     android:src="@drawable/cd_vera" />
@@ -55,6 +56,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/txtAlb1"
                     style="@style/Titulos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -106,6 +108,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/imgAlb2"
                     android:layout_width="128dp"
                     android:layout_height="128dp"
                     android:src="@drawable/cd_carnaval" />
@@ -128,6 +131,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/txtAlb2"
                     style="@style/Titulos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
