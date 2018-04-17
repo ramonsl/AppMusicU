@@ -1,10 +1,11 @@
 package com.example.ramonsl.appmusicu;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class LibraryActivity extends AppCompatActivity {
 
@@ -12,23 +13,21 @@ public class LibraryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_library);
+        openIntent(R.id.btnPlayVera, MainActivity.class);
+        openIntent(R.id.btnPlayCarnaval, MainActivity.class);
 
+    }
 
+    public void openIntent(int id, final Class<? extends Activity> clazz) {
 
-        Button btn1 = findViewById(R.id.btnPlay);
-        Button btn2 = findViewById(R.id.btnPlay1);
-
-        btn1.setOnClickListener(new View.OnClickListener() {
+        Button btn = findViewById(id);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Aqui iria para activity inicial para tocar as musicas ",Toast.LENGTH_LONG).show();
-            }
-        });
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Aqui iria para activity inicial para tocar as musicas",Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), clazz);
+                startActivity(intent);
             }
         });
     }
+
 }

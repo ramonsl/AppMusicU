@@ -11,11 +11,11 @@
     <style name="icones">
         <item name="android:layout_width">48dp</item>
         <item name="android:layout_height">48dp</item>
-        <item name="android:layout_marginEnd">24dp</item>
-        <item name="android:layout_marginStart">24dp</item>
-        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginTop">12dp</item>
         <item name="android:scaleType">centerCrop</item>
-        <item name="android:padding">16dp</item>
+        <item name="android:padding">8dp</item>
         <item name="android:background">@color/primary_light</item>
 
 
@@ -56,5 +56,13 @@
         <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:textSize">12sp</item>
 
+    </style>
+
+    <style name="btn_controls">
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_weight">1</item>
     </style>
 </resources>

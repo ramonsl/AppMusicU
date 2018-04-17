@@ -11,6 +11,7 @@
     <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/primary_light"
         android:orientation="horizontal">
 
         <ImageButton
@@ -18,11 +19,13 @@
             style="@style/icones"
             android:contentDescription="@string/app_play"
             android:scaleType="centerCrop"
+            android:layout_weight="1"
             app:srcCompat="@drawable/ic_play_48dp" />
 
         <ImageButton
-            android:id="@+id/btnRadio"
+            android:id="@+id/btnLibrary"
             style="@style/icones"
+            android:layout_weight="1"
             android:contentDescription="@string/app_biblioteca"
             app:srcCompat="@drawable/ic_library_48dp" />
 
@@ -30,6 +33,7 @@
         <ImageButton
             android:id="@+id/btnFind"
             style="@style/icones"
+            android:layout_weight="1"
             android:contentDescription="@string/app_find"
             app:srcCompat="@drawable/ic_search_black_48dp" />
 
@@ -37,8 +41,9 @@
         <ImageButton
             android:id="@+id/btnLoja"
             style="@style/icones"
+            android:layout_weight="1"
             android:contentDescription="@string/app_store"
-            app:layout_constraintStart_toEndOf="@+id/btnRadio"
+            app:layout_constraintStart_toEndOf="@+id/btnLibrary"
             app:srcCompat="@drawable/ic_store_black_48dp" />
 
     </android.support.v7.widget.LinearLayoutCompat>
@@ -46,6 +51,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/icons"
         android:orientation="vertical">
 
 
@@ -53,23 +59,89 @@
             android:id="@+id/TxtAlbumP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/icons"
             android:gravity="center"
             android:padding="16dp"
             android:text="Classicos do Rock"
             android:textAppearance="@style/Titulos" />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="256dp"
-            android:layout_height="256dp"
+            android:id="@+id/imgCapaAlbum"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
             android:layout_gravity="center"
             app:srcCompat="@drawable/cd_rock" />
 
-        <LinearLayout
-            android:padding="8dp"
+        <TextView
+            android:id="@+id/TxtPlaing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Run to Cover" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/primary_light"
             android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnPreviousMusic"
+                style="@style/btn_controls"
+                android:background="@drawable/ic_previous_48dp" />
+
+            <ImageButton
+                android:id="@+id/btnRewid"
+                style="@style/btn_controls"
+                android:background="@drawable/ic_fast_rewind_black_48dp" />
+
+            <ImageButton
+                android:id="@+id/btnPlayPause"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_pause__48dp" />
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                style="@style/btn_controls"
+                android:background="@drawable/ic_fast_forward_48dp" />
+
+            <ImageButton
+                android:id="@+id/btnNextMusic"
+                style="@style/btn_controls"
+                android:background="@drawable/ic_next_48dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/TxtPLaylist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Playlist"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
 
             <TextView
                 android:id="@+id/txtFaixa1"
@@ -80,17 +152,20 @@
                 android:text="Crossing a line" />
 
             <ImageView
+                android:id="@+id/btnPlayNow"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/ic_play_48dp" />
+
+
         </LinearLayout>
 
         <LinearLayout
-            android:padding="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="8dp">
 
             <TextView
                 android:id="@+id/txtFaixa2"
@@ -99,7 +174,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:text="Run for cover" />
+
             <ImageView
+                android:id="@+id/btnPauseNow"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_weight="1"
@@ -108,10 +185,10 @@
 
 
         <LinearLayout
-            android:padding="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="8dp">
 
             <TextView
                 android:id="@+id/txtFaixa3"
@@ -120,7 +197,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:text="The day i die" />
+
             <ImageView
+                android:id="@+id/btnPLayNow2"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_weight="1"
